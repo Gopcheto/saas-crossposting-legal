@@ -1,0 +1,301 @@
+<title>Privacy Policy</title>
+<style>
+  :root {
+    --paper: #eff1ee;
+    --paper-raised: #f8f9f7;
+    --ink: #1c231f;
+    --ink-soft: #4b554e;
+    --ink-faint: #7c887f;
+    --accent: #3b6e5b;
+    --accent-soft: #dce6e0;
+    --line: #d3d8d2;
+    --shadow: 0 1px 2px rgba(28,35,31,0.06), 0 8px 24px rgba(28,35,31,0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141815;
+      --paper-raised: #1b201c;
+      --ink: #e7ece8;
+      --ink-soft: #a7b2ab;
+      --ink-faint: #6c766f;
+      --accent: #6fbf9e;
+      --accent-soft: #24322b;
+      --line: #2b322d;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141815;
+    --paper-raised: #1b201c;
+    --ink: #e7ece8;
+    --ink-soft: #a7b2ab;
+    --ink-faint: #6c766f;
+    --accent: #6fbf9e;
+    --accent-soft: #24322b;
+    --line: #2b322d;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header.doc-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .wordmark {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--accent);
+  }
+  h1.doc-title {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: 0.25rem 0 0;
+    text-wrap: balance;
+  }
+  .doc-meta {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  nav.toc {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+  }
+  nav.toc p {
+    margin: 0 0 0.6rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.1rem;
+    columns: 2;
+    column-gap: 2rem;
+    font-size: 0.92rem;
+  }
+  nav.toc li { margin-bottom: 0.4rem; break-inside: avoid; }
+  nav.toc a { color: var(--ink-soft); text-decoration: none; }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); text-decoration: underline; }
+
+  table.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+  }
+  table.data-table th, table.data-table td {
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.data-table th {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  table.data-table td { color: var(--ink-soft); }
+  .table-wrap { overflow-x: auto; }
+
+  section.clause {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+  section.clause h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 0.65rem;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+  section.clause h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+  section.clause p, section.clause li {
+    max-width: 65ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+  }
+  section.clause ul { padding-left: 1.3rem; }
+  section.clause li { margin-bottom: 0.5rem; }
+  section.clause strong { color: var(--ink); }
+
+  .badge {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+  }
+
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer.doc-foot {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  footer.doc-foot a { color: var(--ink-soft); }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+
+<div class="page">
+  <header class="doc-head">
+    <span class="wordmark">SaaS Crossposting</span>
+    <h1 class="doc-title">Privacy Policy</h1>
+    <div class="doc-meta">
+      <span>Effective&nbsp;August&nbsp;17,&nbsp;2026</span>
+      <span>English</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>Sections</p>
+    <ol>
+      <li><a href="#who">Who We Are</a></li>
+      <li><a href="#collect">What We Collect</a></li>
+      <li><a href="#use">How We Use It</a></li>
+      <li><a href="#share">Who We Share Data With</a></li>
+      <li><a href="#encryption">Content Encryption &amp; Access</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#cookies">Cookies</a></li>
+      <li><a href="#children">Age Requirement</a></li>
+      <li><a href="#changes">Changes to this Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section class="clause" id="who">
+    <h2><span class="num">1.</span> Who We Are</h2>
+    <p>SaaS Crossposting is a publishing tool that lets content creators upload media once and distribute it automatically to the social and messaging platforms they connect. This policy explains what data we collect to run that service and how we handle it.</p>
+  </section>
+
+  <section class="clause" id="collect">
+    <h2><span class="num">2.</span> What We Collect</h2>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td>Account info</td><td>Email, display name, hashed password</td></tr>
+          <tr><td>Content you upload</td><td>Photos and videos, stored encrypted</td></tr>
+          <tr><td>Connected accounts</td><td>OAuth tokens for platforms you link, encrypted at rest</td></tr>
+          <tr><td>Billing</td><td>Subscription status and plan — card details are handled directly by Stripe, we never see or store full card numbers</td></tr>
+          <tr><td>Usage data</td><td>Login timestamps, publishing history, error logs</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="clause" id="use">
+    <h2><span class="num">3.</span> How We Use It</h2>
+    <ul>
+      <li>To operate the Service — publishing your content to the platforms you select.</li>
+      <li>To process subscription payments and keep your account status accurate.</li>
+      <li>To run the automated check that keeps content compliant on platforms with stricter policies, before it's published there.</li>
+      <li>To detect abuse and keep the Service secure.</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="share">
+    <h2><span class="num">4.</span> Who We Share Data With</h2>
+    <p>We share the minimum data necessary with: <strong>Stripe</strong>, to process payments; <strong>the platforms you explicitly connect</strong> (Telegram, Twitter/X, Instagram, TikTok, and others as they're added), only to publish the content you select; and <strong>our automated content-moderation provider</strong>, which analyzes a file for compliance immediately before publishing. We do not sell your data, and we do not share your private content library with anyone beyond what's needed to deliver the Service you asked for.</p>
+  </section>
+
+  <section class="clause" id="encryption">
+    <h2><span class="num">5.</span> Content Encryption &amp; Access</h2>
+    <span class="badge">No human access by default</span>
+    <p>Your content is encrypted at rest. There is no screen, endpoint, or dashboard view that lets our staff open or download your private content library — only the automated publishing process can decrypt a file, and only at the moment it's needed to complete an action you requested.</p>
+  </section>
+
+  <section class="clause" id="retention">
+    <h2><span class="num">6.</span> Data Retention</h2>
+    <p>We keep your account data for as long as your account is active. If you delete your account, we remove your content and personal data within a reasonable period, except where we're required to retain records (for example, billing records) for legal or accounting purposes.</p>
+  </section>
+
+  <section class="clause" id="rights">
+    <h2><span class="num">7.</span> Your Rights</h2>
+    <p>You can access, export, or delete your data from your dashboard, or by contacting us directly. You can disconnect any connected platform at any time, which removes our access to it.</p>
+  </section>
+
+  <section class="clause" id="cookies">
+    <h2><span class="num">8.</span> Cookies</h2>
+    <p>We use only the minimal, strictly necessary cookies or local storage required to keep you signed in. We do not use advertising or cross-site tracking cookies.</p>
+  </section>
+
+  <section class="clause" id="children">
+    <h2><span class="num">9.</span> Age Requirement</h2>
+    <p>The Service is intended for users aged 18 and over only. We do not knowingly collect data from anyone under 18.</p>
+  </section>
+
+  <section class="clause" id="changes">
+    <h2><span class="num">10.</span> Changes to this Policy</h2>
+    <p>If this policy changes materially, we'll update the effective date above and, where appropriate, notify you directly.</p>
+  </section>
+
+  <section class="clause" id="contact">
+    <h2><span class="num">11.</span> Contact</h2>
+    <p>Questions about this policy can be sent to the contact address listed in your account dashboard.</p>
+  </section>
+
+  <footer class="doc-foot">
+    <span>SaaS Crossposting</span>
+    <a href="terms.html">← Terms of Service</a>
+  </footer>
+</div>

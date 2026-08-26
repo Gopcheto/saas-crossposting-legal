@@ -1,0 +1,272 @@
+<title>Terms of Service</title>
+<style>
+  :root {
+    --paper: #eff1ee;
+    --paper-raised: #f8f9f7;
+    --ink: #1c231f;
+    --ink-soft: #4b554e;
+    --ink-faint: #7c887f;
+    --accent: #3b6e5b;
+    --accent-soft: #dce6e0;
+    --line: #d3d8d2;
+    --shadow: 0 1px 2px rgba(28,35,31,0.06), 0 8px 24px rgba(28,35,31,0.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141815;
+      --paper-raised: #1b201c;
+      --ink: #e7ece8;
+      --ink-soft: #a7b2ab;
+      --ink-faint: #6c766f;
+      --accent: #6fbf9e;
+      --accent-soft: #24322b;
+      --line: #2b322d;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141815;
+    --paper-raised: #1b201c;
+    --ink: #e7ece8;
+    --ink-soft: #a7b2ab;
+    --ink-faint: #6c766f;
+    --accent: #6fbf9e;
+    --accent-soft: #24322b;
+    --line: #2b322d;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header.doc-head {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .wordmark {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--accent);
+  }
+  h1.doc-title {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 600;
+    margin: 0.25rem 0 0;
+    text-wrap: balance;
+  }
+  .doc-meta {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  nav.toc {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+  }
+  nav.toc p {
+    margin: 0 0 0.6rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 1.1rem;
+    columns: 2;
+    column-gap: 2rem;
+    font-size: 0.92rem;
+  }
+  nav.toc li { margin-bottom: 0.4rem; break-inside: avoid; }
+  nav.toc a { color: var(--ink-soft); text-decoration: none; }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); text-decoration: underline; }
+
+  section.clause {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+  section.clause h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    gap: 0.65rem;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+  section.clause h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+  section.clause p, section.clause li {
+    max-width: 65ch;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+  }
+  section.clause ul { padding-left: 1.3rem; }
+  section.clause li { margin-bottom: 0.5rem; }
+  section.clause strong { color: var(--ink); }
+
+  a { color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  footer.doc-foot {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  footer.doc-foot a { color: var(--ink-soft); }
+
+  @media (max-width: 520px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+
+<div class="page">
+  <header class="doc-head">
+    <span class="wordmark">SaaS Crossposting</span>
+    <h1 class="doc-title">Terms of Service</h1>
+    <div class="doc-meta">
+      <span>Effective&nbsp;August&nbsp;17,&nbsp;2026</span>
+      <span>English</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>Sections</p>
+    <ol>
+      <li><a href="#about">About these Terms</a></li>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#service">The Service</a></li>
+      <li><a href="#content">Your Account and Content</a></li>
+      <li><a href="#connected">Connected Third-Party Accounts</a></li>
+      <li><a href="#billing">Subscriptions and Payments</a></li>
+      <li><a href="#moderation">Automated Content Checks</a></li>
+      <li><a href="#affiliate">Affiliate Program</a></li>
+      <li><a href="#prohibited">Prohibited Uses</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#liability">Disclaimers &amp; Liability</a></li>
+      <li><a href="#changes">Changes to these Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section class="clause" id="about">
+    <h2><span class="num">1.</span> About these Terms</h2>
+    <p>These Terms of Service ("Terms") govern your use of SaaS Crossposting (the "Service"), a tool that lets content creators upload media once and publish it automatically to the social and messaging platforms they choose to connect. By creating an account or using the Service, you agree to these Terms.</p>
+  </section>
+
+  <section class="clause" id="eligibility">
+    <h2><span class="num">2.</span> Eligibility</h2>
+    <p>You must be at least 18 years old to create an account. By registering, you confirm that the information you provide is accurate and that you have the legal capacity to enter into these Terms.</p>
+  </section>
+
+  <section class="clause" id="service">
+    <h2><span class="num">3.</span> The Service</h2>
+    <p>SaaS Crossposting lets you:</p>
+    <ul>
+      <li>Upload photos and videos through a Telegram bot or your web dashboard.</li>
+      <li>Choose which connected platforms (Telegram, Twitter/X, Instagram, TikTok, and others as they become available) should receive each upload.</li>
+      <li>Keep a private content library, separate from what you cross-post publicly.</li>
+      <li>Manage a paid subscription that determines your daily posting limits and which platforms are available to you.</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="content">
+    <h2><span class="num">4.</span> Your Account and Content</h2>
+    <p>You own the content you upload. By uploading it, you grant us a limited license to store, process, and transmit that content solely to operate the Service — including publishing it to the platforms you explicitly select. We do not use your content for any purpose beyond what you ask the Service to do. You are responsible for making sure you have the rights to any content you upload and that it complies with applicable law and the policies of the platforms you connect.</p>
+  </section>
+
+  <section class="clause" id="connected">
+    <h2><span class="num">5.</span> Connected Third-Party Accounts</h2>
+    <p>To publish on your behalf, you connect your own accounts on third-party platforms using each platform's official sign-in flow. We never see or store your password for platforms that support this — Twitter/X, Instagram, and TikTok connections use OAuth, so authentication happens directly with that platform. Any access tokens or credentials we do store are encrypted at rest. You can disconnect any platform at any time from your dashboard.</p>
+  </section>
+
+  <section class="clause" id="billing">
+    <h2><span class="num">6.</span> Subscriptions and Payments</h2>
+    <p>Paid plans are billed on a recurring basis through Stripe, our payment processor. We never store your full card number. Your account is activated automatically when payment succeeds and deactivated automatically if a payment fails or you cancel; you keep access to your data either way.</p>
+  </section>
+
+  <section class="clause" id="moderation">
+    <h2><span class="num">7.</span> Automated Content Checks</h2>
+    <p>Before publishing to platforms with stricter content policies (such as TikTok and Instagram), the Service automatically checks that the file meets that platform's requirements for public content. This check exists to protect your account from suspension — content that does not pass is not published there, and you're notified so you can adjust your platform selection.</p>
+  </section>
+
+  <section class="clause" id="affiliate">
+    <h2><span class="num">8.</span> Affiliate Program</h2>
+    <p>If you refer another creator using your personal referral link, you may earn a recurring commission on their subscription for as long as both accounts remain active, at the rate shown in your dashboard.</p>
+  </section>
+
+  <section class="clause" id="prohibited">
+    <h2><span class="num">9.</span> Prohibited Uses</h2>
+    <ul>
+      <li>Uploading content you do not have the rights to distribute.</li>
+      <li>Uploading content that is illegal in the jurisdictions where it will be published.</li>
+      <li>Using the Service to spam, harass, or impersonate someone else.</li>
+      <li>Attempting to circumvent the platform connection limits of your plan.</li>
+    </ul>
+  </section>
+
+  <section class="clause" id="termination">
+    <h2><span class="num">10.</span> Termination</h2>
+    <p>You may close your account at any time from your dashboard. We may suspend or terminate accounts that violate these Terms, with notice where practical.</p>
+  </section>
+
+  <section class="clause" id="liability">
+    <h2><span class="num">11.</span> Disclaimers &amp; Limitation of Liability</h2>
+    <p>The Service is provided "as is." We are not responsible for actions taken by third-party platforms on your connected accounts, including suspensions or bans resulting from content you chose to publish. To the extent permitted by law, our liability is limited to the amount you paid us in the twelve months before a claim.</p>
+  </section>
+
+  <section class="clause" id="changes">
+    <h2><span class="num">12.</span> Changes to these Terms</h2>
+    <p>We may update these Terms as the Service evolves. We'll post the new effective date here; continued use of the Service after a change means you accept the updated Terms.</p>
+  </section>
+
+  <section class="clause" id="contact">
+    <h2><span class="num">13.</span> Contact</h2>
+    <p>Questions about these Terms can be sent to the contact address listed in your account dashboard.</p>
+  </section>
+
+  <footer class="doc-foot">
+    <span>SaaS Crossposting</span>
+    <a href="privacy.html">Privacy Policy →</a>
+  </footer>
+</div>
